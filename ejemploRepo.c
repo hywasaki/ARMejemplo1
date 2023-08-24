@@ -4,6 +4,23 @@
 
 void intercambiar(int* num1, int*num2);
 
+
+// algoritmo que compara los numeros dos a dos y recorre el arreglo
+void ordenamiento_burbuja(int arr[], int n){
+    for (int i = 0; i < n-1; i++)
+    {
+        for (int j = 0; i < n-1; j++)
+        {
+            printf("Comparando %d con %d \n", arr[j], arr[j+1]);
+            if(arr[j]>arr[j+1]){
+                intercambiar(&arr[j], &arr[j+1]);
+            }
+        }
+        
+    }
+}
+
+
 int main(){
 
     srand(time(NULL)); // genera numeros aleatorios
