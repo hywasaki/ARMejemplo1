@@ -16,4 +16,16 @@ int main(){
     }
     return 0;
 
+    printf("\n"); // salto de linea
+
+    int numeros_insercion[100]; // creamos un arreglo de 100 datos
+
+    printf("Arreglo inicial para la insercion: \n");
+    for (int i=1 ; i < 100; i++)
+    {
+        numeros_insercion[i]=rand()%100; // numeros aleatorios de 0 a 100 en el array 
+        printf("%d", numeros_insercion[i]); // imrpimimos el valor
+    }
+    return 0;
+
 }
