@@ -2,6 +2,25 @@
 #include<time.h>
 #include<stdlib.h>
 
+void intercambiar(int* num1, int*num2);
+
+
+// algoritmo que compara los numeros dos a dos y recorre el arreglo
+void ordenamiento_burbuja(int arr[], int n){
+    for (int i = 0; i < n-1; i++)
+    {
+        for (int j = 0; i < n-1; j++)
+        {
+            printf("Comparando %d con %d \n", arr[j], arr[j+1]);
+            if(arr[j]>arr[j+1]){
+                intercambiar(&arr[j], &arr[j+1]);
+            }
+        }
+        
+    }
+}
+
+
 int main(){
 
     srand(time(NULL)); // genera numeros aleatorios
@@ -39,10 +58,11 @@ int main(){
     clock_t inicio_insercion =clock(); // 
     clock_t fin_insercion = clock();
     double tiempo_insersion=(double)(fin_insercion-inicio_insercion)/(CLOCKS_PER_SEC);
-
-
-
-
     return 0;
 
+}
+
+void intercambiar(int* num1, int*num2){
+    int temporal=*num1; 
+    *num2=temporal;
 }
