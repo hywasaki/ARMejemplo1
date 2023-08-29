@@ -76,7 +76,7 @@ int main()
     ordenamiento_burbuja(numeros_burbuja,n);
     clock_t fin_burbuja = clock();
     double tiempo_burbuja = (double)(fin_burbuja - inicio_burbuja)/CLOCKS_PER_SEC;
-// CLOCKS_PER_SEC es un constante que tiene la cantidad de cilos que genera nuestro procesador
+    // CLOCKS_PER_SEC es un constante que tiene la cantidad de cilos que genera nuestro procesador
     // la division nos da los segundos que se demora en ejecutrar nuestro algortimso
 
 
